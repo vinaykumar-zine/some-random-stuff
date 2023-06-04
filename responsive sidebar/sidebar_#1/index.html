@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar_1</title>
+</head>
+<body>
+    
+     <nav class="sidebar">
+        <div class="sidebar-inner">
+            <header class="sidebar-header">
+                <button type="button" class="sidebar-burger" onclick="toggleSiderbar()">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <img src="logo.png" alt="" class="sidebar-logo">
+            </header>
+            <nav class="sidebar-menu">
+                <button type="button">
+                    <i class="bx bx-home"></i>
+                    <span>home</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-user'></i>
+                    <span>Accounts</span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class='bx bx-shape-circle' ></i>
+                    <span>Blockchain</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-data' ></i>
+                    <span>Database</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-speaker' ></i>
+                    <span>Audiovibe</span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class='bx bx-music' ></i>
+                    <span>Soundblast</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-folder' ></i>
+                    <span>Folders</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-layer' ></i>
+                    <span>Levels</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-lock' ></i>
+                    <span>Security</span>
+                </button>
+                
+            </nav>
+        </div>
+     </nav>
+
+
+     <script type="text/javascript">
+        const toggleSiderbar = () => document.body.classList.toggle(
+            "open"
+        )
+     </script>
+
+    
+</body>
+</html>
