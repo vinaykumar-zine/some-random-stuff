@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body, wrapper{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+.clock{
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    background: url("png-clipart-clock-face-digital-clock-time-clock-angle-white-thumbnail.png");
+    background-size: 100%;
+
+}
+
+#hour-hand, #minute-hand, #second-hand{
+    position: absolute;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour-hand{
+    width: 8px;
+    height: 100px;
+    top: 25%;
+    left: 188px;
+    opacity: 0.8;
+}
+
+#minute-hand{
+    width: 8px;
+    height: 85px;
+    top: 28%;
+    left: 188px;
+    opacity: 0.7;
+}
+
+#second-hand{
+    width: 6px;
+    height: 85px;
+    top: 28%;
+    left: 188px;
+    opacity: 0.6;
+}
