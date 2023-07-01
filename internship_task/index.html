@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>task</title>
+
+    <style>
+        *{
+         box-sizing: border-box;
+        }
+        body{
+            font-family: "Raleway", sans-serif;
+            height: 100vh;
+            width: 100vw;
+            
+        }
+        header{
+            padding-top: 2.5%;
+            text-align: center;
+            padding-left: 150px;
+            font-weight: 100;
+        }
+        .sidenav {
+             position: fixed;
+             top: 0px;
+             left: 0px;
+             width: 150px;
+             height: 100%;
+             background: #9a9a9a;
+        }   
+        
+        .sidenav{
+            display: flex;
+            flex-direction: column;
+            padding-top: 120px;
+            
+        }
+
+        .sidenav a{
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding-left: 15px;
+            color: #fff;
+        }
+
+        .sidenav hr{
+            color: #9a9a9a;
+            padding-right: 100%;
+            width: "50%"
+        }
+        
+        .content{
+            padding-left: 150px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .content .Home{
+            padding-top: 6%;
+            
+        }
+        
+        .content .Home h1{
+            text-align: center;
+            color: #9a9a9a;
+        }
+
+        .content .Home #left_content{
+            /* background: red; */
+            border-bottom: solid rgba(128, 128, 128, 0.413);
+            border-left: solid rgba(128, 128, 128, 0.413);
+            border-radius: 10px;
+            padding: 50px 30px 50px 30px;
+            margin-top: 150px;
+            margin-right: 60%;
+            margin-left: 10%;
+            color: #6f693a;
+        }
+        .content .Home #right_content{
+            /* background: red; */
+            border-bottom: solid rgba(128, 128, 128, 0.413);
+            border-right: solid rgba(128, 128, 128, 0.413);
+            border-radius: 10px;
+            padding: 32px 50px 50px 30px;
+            margin-top: 4%;
+            margin-left: 60%;
+            margin-right: 20%;
+            color: #6f693a;
+        }
+
+        .content .btn_box button{
+            width: 70px;
+            height: 70px;
+            background: #9a9a9a;
+            padding: 15px 13px 15px 15px;
+            border-radius: 40px;
+            margin-top: 4%;
+            margin-left: 50%;
+            cursor: pointer;
+            color: #fff;
+            
+        }
+        .content .btn_box .btn_anima{
+            animation: shake_btn 2s infinite;
+        }
+        @keyframes shake_btn {
+            0% {transform: translateX(-8px);}
+         20% {transform: translateX(-4px);}
+         50% {transform: translateX(-4px);}
+         70% {transform: translateX(-4px);}
+         80% {transform: translateX(9px);}
+         90% {transform: translateX(-9px);}
+        }
+
+        .content .Guide{
+            background: #f5e77e;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        .content .Guide h1{
+            margin-top: 2.8%;
+            text-align: center;
+            font-weight: 900;
+            padding-top: 10%;
+            color: #9a9a9a;
+        }
+
+        .content .Guide .images img{
+            margin-top: 10%;
+            margin-left: 21%;
+            border-radius: 520px;
+            width: 100px;
+            
+            
+        }
+
+        .content .Information{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .content .Information h1{
+            margin-top: 2.8%;
+            text-align: center;
+            font-weight: 900;
+            padding-top: 10%;
+            color: #9a9a9a;
+        }
+
+        .content .Information h2{
+            text-align: center;
+            margin-top: 5%;
+            color: #3a5978;
+        }
+
+        .content .Information img{
+            content: justify;
+            width: 150px;
+            margin-left: 45.9%;
+            margin-top: 5%;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 1s ease;
+        }
+
+        .content .Information img:hover{
+            -webkit-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            transform: scale(0.8);
+            transition: 1s ease;
+        } 
+
+        input[type=text],
+        select,
+        textarea {
+            padding: 8px;
+            border: 1px solid #eeeeee;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            resize: vertical;
+            width: 100%;
+      }
+      input[type=submit] {
+          color: #ffffff;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 7px;
+          cursor: pointer;
+          background-color: #9a9a9a;
+
+      }
+      input[type=submit]:hover {
+          background-color: #6fe8d7;
+      }
+      .content .container {
+          background: #ebb7b7;
+          padding: 15px;
+          padding-left: 5%;
+          margin: 20%;
+          border-radius: 8px;
+      }
+
+    </style>
+
+</head>
+<body>
+    <header>welcome to the webpage created by @Vinaykumar</header>
+    <div class="sidenav">
+        
+        <hr>
+        <a href="#home">Home</a>
+        <hr>
+        <a href="#guide">Guide</a>
+        <hr>
+        <a href="#information">Information</a>
+        <hr>
+        <a href="#contact">Contact</a>
+        <hr>
+    </div>
+    
+    <div class="content">
+
+        <div id="home" class="Home">
+            <h1>HELLO</h1>
+            <p id="left_content">Hello there <br> My name is VInaykumar Zine and I'm 21 year old. I'm in 4th year and pursuing Electronics and Communication</p>
+            <p id="right_content">Wanna know more about me, <br>click on more button</p>
+         </div>
+
+         <div class="btn_box">
+            <button class="btn_anima"><b>More<b></button>
+         </div>
+
+         <div id="guide" class="Guide">
+            <h1>Following are some technologies I know</h1>
+            <div class="images">
+                <img src="html.png" alt="HTML">
+                <img src="css.png" alt="css">
+                <img src="javascript.png" alt="javascript">
+            </div>
+         </div>
+        
+         <div id="information" class="Information">
+            <h1>Here are some projects I created</h1>
+            <h2>follow the github link </h2>
+            <a href="https://github.com/VINAYKUMAR-ZINE"><img src="github.png"  alt=""></a>
+         </div>
+         <footer>
+         <div class="container" id="contact">
+            <form action="/form/submit" method="POST">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="name" placeholder="Type your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="surname" placeholder="Type your last name..">
+              <label for="lname">E-mail Address</label>
+              <input type="text" id="mail" name="e-mail" placeholder="Type your e-mail..">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Type your message.." style="height:200px"></textarea>
+              <input type="submit" value="Send">
+            </form>
+          </div>
+        </footer>
+
+    </div>
+   
+
+
+    
+</body>
+</html>
